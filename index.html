@@ -21,42 +21,55 @@
         </style>
     </head>
     <body>
-        <table>
-            <tr>
-                <td>
-                    <div>
-                        <label>Enter code here</label>
-                    </div>
-                </td>
-                <td>
-                    <div>
-                        <label>Parsed code here</label>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="textAreaWrapper">
-                        <textarea id="codePlaceholder" title="Enter code here"></textarea>
-                    </div>
-                </td>
-                <td>
-                    <div class="textAreaWrapper">
-                        <textarea id="parsedCode" title="Parse code"></textarea>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>
-                        <button id="codeSubmissionButton">Parse code</button>
-                    </div>
-                </td>
-                <td>
-                </td>
-            </tr>
-        </table>
+    <table>
+      <tr>
+        <td>
+          <div>
+            <label>Enter code here</label>
+          </div>
+        </td>
+        <td>
+          <div>
+            <label>Enter function's input here</label>
+          </div>
+        </td>
+        <td>
+          <div>
+            <label>Control Flow Graph</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="textAreaWrapper">
+            <textarea id="codePlaceholder" title="Enter code here"></textarea>
+          </div>
+        </td>
+        <td>
+          <div class="textAreaWrapper">
+            <textarea id="argumentsPlaceholder" title="Enter function's input here"></textarea>
+          </div>
+        </td>
+        <td>
+          <div class="textAreaWrapper">
 
-        <script src="dist/bundle.js"></script>
+            <!-- <textarea id="symbolicFunction" title="Symbolic substituted function"></textarea> -->
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <button id="codeSubmissionButton">Draw CFG</button>
+          </div>
+        </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <div id="diagram">
+
+    </div>
+    <script src="dist/bundle.js"></script>
     </body>
 </html>
